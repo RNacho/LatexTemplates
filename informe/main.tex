@@ -1,0 +1,24 @@
+% Se introducen los packages desde el header
+\input{./header.tex}
+
+\title{Titulo del apunte}
+\author{Randazzo Ignacio Agustin}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+% Definiciones de funciones propias van en la biblioteca.
+\subimport{./}{biblioteca.tex}
+
+% Por comodidad se divide al archivo en sub-archivos, dependiendo
+% de la estructura del documento.
+\subimport{./entradas/}{primerEntrada.tex}
+
+% Para agregar mas archivos, se agregan con la misma estructura, 
+% en el orden que se quiere que aparezcan, es recomendable agregar
+% una pequeña descripcion de que son aqui.
+\subimport{./entradas/}{segundaEntrada.tex}
+
+\end{document}
+

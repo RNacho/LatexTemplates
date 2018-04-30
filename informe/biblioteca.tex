@@ -1,0 +1,13 @@
+% En este archivo se guardan comandos que se usan globalmente, pero no pueden ponerse en el header
+% porque necesitan estar dentro del cuerpo de document.
+
+% Este conjunto sirve despues para simplificar la grafica de diagramas en bloques.
+\tikzset{
+  block/.style  = {draw, thick, rectangle, minimum height = 3cm, minimum width = 3cm},
+  sum/.style    = {draw, circle, node distance = 2cm},
+  input/.style  = {coordinate},
+  output/.style = {coordinate}
+}
+
+%Opcion global para dejar espacios entre tablas, que queda mas prolijo
+\tabulinesep=1.2mm
